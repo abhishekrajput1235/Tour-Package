@@ -1,13 +1,86 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+.App{
+  min-height: 100vh;
+  background: rgb(233,205,203);
+  background: linear-gradient(180deg, rgba(233,205,203,1) 0%, rgba(0,0,0,1) 0%, rgba(95,65,200,1) 41%, rgba(177,173,207,1) 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-heading{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.main-heading-txt{
+  border: 0.5rem solid rgb(19, 42, 172);
+  padding: 1.5rem 3rem;
+  border-radius: 2rem;
+  border-style: dashed;
+  font-size: 4rem;
+  margin: 3rem 0rem;
+  color: white;
+}
+
+.card-container{
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* .card{
+  padding: 10px;
+  width: 90%;
+  box-shadow: -1px 0px 11px 2px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  
+}
+.tour-info{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.image{
+  width: 300px;
+  height: 300PX;
+} */
+
+.refresh-page-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  
+  overflow: hidden;
+  background: rgb(233,205,203);
+  background: linear-gradient(180deg, rgba(233,205,203,1) 0%, rgba(0,0,0,1) 0%, rgba(95,65,200,1) 41%, rgba(177,173,207,1) 100%);
+}
+.refresh-page-heading{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.refresh-btn{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
 }
